@@ -1,11 +1,11 @@
 function play() {
 
-    // رقم عشوائي من 1 إلى 20
+    // رقم من 1 إلى 20
     let number = Math.floor(Math.random() * 20) + 1;
 
     document.getElementById("result").innerText = number;
 
-    // تغيير لون الخلفية
+    // تغيير الخلفية
     let colors = [
         "#ff9a9e",
         "#a18cd1",
@@ -18,7 +18,6 @@ function play() {
     document.body.style.background =
         colors[Math.floor(Math.random() * colors.length)];
 
-    // 👇 يخفي الزر بعد أول ضغطة
-    let btn = document.querySelector("button");
-    btn.style.display = "none";
+    // إخفاء الزر بعد أول ضغطة
+    document.getElementById("startBtn").style.display = "none";
 }
