@@ -1,28 +1,44 @@
 body {
     text-align: center;
     font-family: Arial;
-    background: #ffe4e1;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
 }
 
+/* يخلي التصميم مناسب للجوال */
 .box {
-    margin-top: 120px;
+    margin-top: 20vh;
+    padding: 20px;
 }
 
+h1 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* زر كبير للجوال */
 button {
-    padding: 15px 30px;
+    width: 80%;
+    max-width: 300px;
+    padding: 15px;
     font-size: 18px;
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
     background: #ff5e78;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 #result {
     margin-top: 30px;
-    font-size: 26px;
+    font-size: 40px;
+    font-weight: bold;
 }
