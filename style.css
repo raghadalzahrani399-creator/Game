@@ -6,7 +6,6 @@ body {
     background: linear-gradient(to right, #ff9a9e, #fad0c4);
 }
 
-/* يخلي التصميم مناسب للجوال */
 .box {
     margin-top: 20vh;
     padding: 20px;
@@ -20,7 +19,6 @@ p {
     font-size: 18px;
 }
 
-/* زر كبير للجوال */
 button {
     width: 80%;
     max-width: 300px;
