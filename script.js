@@ -18,8 +18,7 @@ function play() {
     document.body.style.background =
         colors[Math.floor(Math.random() * colors.length)];
 
-    // يخلي الزر يشتغل مرة وحدة فقط
+    // 👇 يخفي الزر بعد أول ضغطة
     let btn = document.querySelector("button");
-    btn.disabled = true;
-    btn.innerText = "Done ✔️";
+    btn.style.display = "none";
 }
