@@ -1,11 +1,11 @@
 function play() {
 
-    // أرقام من 1 إلى 20
+    // رقم عشوائي من 1 إلى 20
     let number = Math.floor(Math.random() * 20) + 1;
 
     document.getElementById("result").innerText = number;
 
-    // ألوان حلوة ومتناسقة
+    // تغيير لون الخلفية
     let colors = [
         "#ff9a9e",
         "#a18cd1",
@@ -15,5 +15,11 @@ function play() {
         "#8fd3f4"
     ];
 
-    document.body.style.background = colors[Math.floor(Math.random() * colors.length)];
+    document.body.style.background =
+        colors[Math.floor(Math.random() * colors.length)];
+
+    // يخلي الزر يشتغل مرة وحدة فقط
+    let btn = document.querySelector("button");
+    btn.disabled = true;
+    btn.innerText = "Done ✔️";
 }
